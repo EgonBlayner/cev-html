@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos locais ou internos</title>
+    <!-- Tudo na tag style é considerado CSS. -->
+    <!-- Essa técnica é util para sites com apenas 1 documento. -->
+    <!-- Desvantagens de usar o style assim:
+         1- Fica muito grande a parte de estilos e o código HTML fica lá em baixo 
+         2- Se você tiver 30 páginas e quise aplicar o mesmo estilo vai ter que 
+            copiar e colar nas 30 páginas.-->
+    <style>
+        body{
+            background-color: lightskyblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        h1{
+            color: darkblue;
+        }
+
+        h2{
+            color: darkred;
+        }
+
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<!-- As CSS inline não é a melhor prática, dá muito trabalho para fazer e 
+     também para mudar pois temos que fazer tudo linha por linha. -->
+<body>
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis 
+        sint officia necessitatibus labore et nisi dolor, quidem debitis officiis. 
+        Maiores quos, laborum incidunt sequi excepturi veniam vero porro sed.</p>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos quasi labore
+        in ut quod molestiae harum, laborum illum cum dolores vitae quam nesciunt 
+        corporis repellendus, doloremque iusto, consequuntur quibusdam accusamus?</p>
+    
+    <h1>Capítulo 2</h1>
+    <h2 >Capítulo 2.1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos quasi labore
+        in ut quod molestiae harum, laborum illum cum dolores vitae quam nesciunt 
+        corporis repellendus, doloremque iusto, consequuntur quibusdam accusamus?</p>
+</body>
+</html>

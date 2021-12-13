@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: lightgrey;
+            height: 200px;
+            width: 200px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(101, 161, 32);
+
+            /* Começa de cima e gira como um ponteiro de relógio. */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* margin: auto - deixa a caixa no meio. */
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            /* O outline não aumenta ou diminui a margem, ele fica
+               dentro da margem. */
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            /* 
+                shorthands para simplificar:
+                
+                border: 10px solid red;
+                padding: 10px 10px 10px 10px;
+                obs: se as 4 forem iguais basta informar 1 vez : padding: 10px;
+                margin: 10px 10px  10px 10px;
+                outline: 5px dashed salmon;
+
+            */
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Todo elemento visivel na tela é uma caixa. Uma caixa possui:
+        1- height- Altura
+        2- width- Largura
+        
+        Pode-se traçar uma linha em volta da caixa, essa linha é 
+        chamada de boder (borda). 
+
+        O espaço entre a linha e a caixa é o padding (preenchimento). 
+
+        Também existe a margin (margem) que é o espaço da borda para 
+        fora e serve para que outra caixa não fique colada na borda.
+
+        Também é possivel criar um tracejado fora da borda e dentro 
+        da margem que é chamado de outline.
+
+        Existem dois tipos de caixa:
+        1- box-level - Ocupa toda a largura da tela e da uma quebra de
+        linha em cima e em baixo. 
+        Ex: div, h1, p, main, header, nav, article, aside, footer, form, video.
+        2- inline-level- Ocupa apenas um espaço definido e não quebra linha. 
+        Ex: span, a, code, small, strong, em, sup, sub, label, button, input, select.
+    -->
+
+    <h1>Exemplo de caixa boxlevel</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="a">links são exemplos de 
+    caixas inline-level</a> vamos ver como tudo isso funcioan</p>
+</body>
+</html>

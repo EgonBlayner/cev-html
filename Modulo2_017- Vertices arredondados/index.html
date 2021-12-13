@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /* border-radius- Da um arredondamento da caixa. */
+            border-radius: 20px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 1px;
+        }
+        footer > p {
+            margin: 0px;
+            text-align: center;
+        }
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(83, 82, 82);
+        }
+        nav {
+            background-color: rgb(102, 100, 100);
+            padding: px;
+            /* box-shadow - sombra de caixa */
+            /* Geralmente a sombra é preta, pode haver uma transparência, 
+               por isso colocamos black e colocamos uma transparência. */
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+            
+        }
+        h1 {
+            /* O inset cria uma sombra interna. */
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.568);
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: blanchedalmond;
+            margin: 10px;
+            /* 50%- cria uma bola. */
+            border-radius: 50%;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!-- Antigamente se usava div com id em tudo, hoje em dia temos as tags
+         semanticas, não é preciso mais ficar usando div dentro de div. -->
+    
+    <!-- header - cabeçalho.  -->
+    <header>
+        <h1>Meu site</h1>
+        <!-- nav- menu. -->
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <!-- main- conteúdo principal. -->
+    <main>
+        <!-- section- seção. -->
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+
+        <!-- OBS: nada impede de se colocar sections dentro dos articles. -->
+        <section id="noticias">
+            <h2>Notícias sobre o Brasil.</h2>
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Similique, obcaecati nobis sapiente perspiciatis deserunt 
+                    inventore repellendus voluptate porro, accusantium laboriosam 
+                    placeat vitae labore nihil ratione. Id eum nobis distinctio 
+                    temporibus!</p>
+                <aside>
+                    <p>artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+    <!-- footer- rodapé. -->
+    <footer>
+        <p>Desenvolvido pelo curso em vídeo.</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

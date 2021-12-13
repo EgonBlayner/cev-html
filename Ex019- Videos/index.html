@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidos com HTML</title>
+</head>
+<body>
+    <!-- Formatos recomendados: MP4 e M4v, webn, OGV.  -->
+    <!-- O MP4 e o webn são os mais populares. -->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- Da forma abaixo só se pode colocar 1 formato 
+    <video src="midia/Meu-Video-comp.m4v" width="300" height="400" controls></video> -->
+    
+    <!-- Nesta outra forma podemos tentar vários formatos, pois alguns navegadores
+         não aceitam alguns formatos. -->
+         <!-- source src coloca o formato compatível entre os vários formatos. 
+              A órdem que você coloca faz diferença, ele tenta rodar o primeiro. -->
+         <!-- poster coloca a imagem de descanso de tela.  -->
+         <video controls poster="imagens/capa.jpg" width="300" height="300">
+             <source src="midia/Meu-Video-1.webm" type="video/webm">
+             <source src="midia/meu-video.mp4" type="video/mp4">
+
+            <p>Seu navegador não é compatível.</p>
+         </video>
+</body>
+</html>
